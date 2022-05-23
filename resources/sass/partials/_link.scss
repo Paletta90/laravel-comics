@@ -1,0 +1,30 @@
+#container {
+    background-color: $blue;
+    padding: 30px 0;
+
+
+    ul {
+        width: 70%;
+        margin: 0 auto;
+        // Lista in flex e style-type:none
+        @include listHorizontal();
+
+        li {
+            margin: 0 10px;
+            @include flex(row, initial, center);
+
+            a {
+                @include flex(row, initial, center);
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+                font-size: $f-medium;
+            }
+
+            img {
+                width: 50px;
+                margin: 0 10px;
+            }
+        }
+    }
+}

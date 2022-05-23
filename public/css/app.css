@@ -77,3 +77,36 @@
   background-size: cover;
   margin-bottom: -10px;
 }
+
+#container {
+  background-color: #0282f9;
+  padding: 30px 0;
+}
+#container ul {
+  width: 70%;
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+#container ul li {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+#container ul li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+#container ul li img {
+  width: 50px;
+  margin: 0 10px;
+}
