@@ -32,12 +32,15 @@
         @include('partials.link')
     </section>
 
+    {{-- Footer --}}
     <footer>
 
+        {{-- Link --}}
         <div class="footerTop">
             @include('partials.footer')
         </div>
 
+        {{-- footer bottom --}}
         <div class="footerBottom">
             @include('partials.footerBottom')
         </div>

@@ -14,6 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $navBar = [
+        'characters',
+        'comics',
+        'movies',
+        'tv',
+        'games',
+        'collectibles',
+        'videos',
+        'fans',
+        'news',
+        'shop'
+    ];
     $arrayDCComics = [
         'Characters',
         'Comics',
@@ -48,13 +60,14 @@ Route::get('/', function () {
         'DC Power Visa'
     ];
     $data = [
+        'navBar' => $navBar,
         'arrayDCComics' => $arrayDCComics,
         'arrayShop' => $arrayShop,
         'arrayDC' => $arrayDC,
         'arraySites' => $arraySites,
 
     ];
-    return view('comics', $data);
+    return view('home', $data);
 });
 
 Route::get('/comics', function(){

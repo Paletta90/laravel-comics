@@ -23,16 +23,14 @@
 
             <ul>
 
-                <li><a href=""><div class="p-yb-30">characters</div> </a><div class="bar"></div> </li>
-                <li><a href=""><div class="p-yb-30">comics</div> </a><div class="bar"></div> </li>
-                <li><a href=""><div class="p-yb-30">movies</div> </a><div class="bar"></div> </li>
-                <li><a href=""><div class="p-yb-30">tv</div> </a><div class="bar"></div> </li>
-                <li><a href=""><div class="p-yb-30">games</div> </a><div class="bar"></div> </li>
-                <li><a href=""><div class="p-yb-30">collectibilies</div> </a><div class="bar"></div> </li>
-                <li><a href=""><div class="p-yb-30">videos</div> </a><div class="bar"></div> </li>
-                <li><a href=""><div class="p-yb-30">fans</div> </a><div class="bar"></div> </li>
-                <li><a href=""><div class="p-yb-30">news</div> </a><div class="bar"></div> </li>
-                <li><a href=""><div class="p-yb-30">shop</div> </a><div class="bar"></div> </li>
+                @foreach ($navBar as $item)
+                <li>
+                    <a href="">
+                        <div class="p-yb-30">{{$item}}</div>
+                        <div class="bar"></div>
+                    </a>
+                </li>
+                @endforeach
 
             </ul>
 
@@ -46,6 +44,3 @@
     </div>
 
 </header>
-
-
-
