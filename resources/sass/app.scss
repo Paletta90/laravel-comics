@@ -1,17 +1,20 @@
 // Reset
-@import './partials/reset';
+@import './sass-utils/mixin';
 // Variabili
-@import './partials/variabili';
+@import './sass-utils/reset';
 // Mixin
-@import './partials/mixin';
-// Header
-@import './partials/header';
-// Jumbotron
-@import './partials/jumbotron';
-// Section Link
-@import './partials/link';
-// Footer
-@import './partials/footer';
+@import './sass-utils/variabili';
 
+// Layout
+// Header
+@import './layout/header';
+// Jumbotron
+@import './layout/jumbotron';
+// Section Link
+@import './layout/link';
+// Footer
+@import './layout/footer';
+
+// Pages
 //Comics
-@import './partials/comics';
+@import './pages/comics';
