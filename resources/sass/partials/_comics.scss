@@ -2,8 +2,7 @@ main {
     background-color: black;
 
     #comics {
-        width: 70%;
-        margin: 0 auto;
+        @include center-x(70%);
 
         .contenitore {
             padding: 20px 0;

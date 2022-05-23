@@ -28,7 +28,7 @@
          @yield('content')
     </main>
 
-    {{-- Link --}}
+    {{-- section Link --}}
     <section>
         @include('partials.link')
     </section>

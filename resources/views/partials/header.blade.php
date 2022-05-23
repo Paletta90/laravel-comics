@@ -25,7 +25,7 @@
 
                 @foreach ($navBar as $item)
                 <li>
-                    <a href="{{ route('comics') }}">
+                    <a href="{{ route( 'comics' ) }}">
                         <div class="p-yb-30">{{$item}}</div>
                         <div class="bar"></div>
                     </a>

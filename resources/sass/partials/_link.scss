@@ -1,11 +1,10 @@
-#container {
+#sectionLink{
     background-color: $blue;
     padding: 30px 0;
 
 
     ul {
-        width: 70%;
-        margin: 0 auto;
+        @include center-x(70%);
         // Lista in flex e style-type:none
         @include listHorizontal();
 
@@ -15,7 +14,6 @@
 
             a {
                 @include flex(row, initial, center);
-                text-decoration: none;
                 color: white;
                 text-transform: uppercase;
                 font-size: $f-medium;

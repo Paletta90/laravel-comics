@@ -3,15 +3,13 @@
     padding: 10px 0px;
 
     div {
-        width: 70%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: flex-end;
+        @include center-x(70%);
+        @include flex(row, flex-end, initial);
 
         p {
             font-size: $f-small;
-            text-transform: uppercase;
             color: white;
+            text-transform: uppercase;
             margin-right: 15px;
         }
     }
