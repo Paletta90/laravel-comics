@@ -19,11 +19,11 @@
 .header {
     width: 70%;
     margin: 0 auto;
-    padding: 10px 0;
+    padding-top: 10px;
     @include flex(row, space-between, center);
 
     ul {
-        padding-top: 30px;
+        padding-top: 35px;
         // Lista in flex e style-type:none
         @include listHorizontal();
 

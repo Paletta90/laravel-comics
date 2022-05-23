@@ -23,14 +23,14 @@
 .header {
   width: 70%;
   margin: 0 auto;
-  padding: 10px 0;
+  padding-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 .header ul {
-  padding-top: 30px;
+  padding-top: 35px;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -109,4 +109,86 @@
 #container ul li img {
   width: 50px;
   margin: 0 10px;
+}
+
+#footerTop {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+}
+#footerTop div {
+  margin-right: 50px;
+}
+#footerTop div ul {
+  margin: 20px 0;
+  list-style-type: none;
+  text-align: left;
+}
+#footerTop div ul h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+#footerTop div ul li {
+  display: flex;
+  flex-direction: column;
+  color: grey;
+  text-align: left;
+}
+#footerTop div ul li a {
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: white;
+  margin-bottom: 5px;
+}
+#footerTop div ul li a:hover {
+  text-decoration: underline;
+}
+#footerTop .bg-logo {
+  width: 50%;
+  background-image: url("../../../images/dc-logo-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#footerBottom {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+#footerBottom .button {
+  border: 3px solid #0282f9;
+  cursor: pointer;
+}
+#footerBottom .button div {
+  text-transform: uppercase;
+  padding: 10px;
+  color: white;
+}
+#footerBottom .block-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+}
+#footerBottom .block-right div {
+  margin: 0 10px;
+  cursor: pointer;
+}
+#footerBottom .block-right div span {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0282f9;
+}
+
+.footerTop {
+  background-image: url("../../../images/footer-bg.jpg");
+}
+
+.footerBottom {
+  background-color: #303030;
 }
