@@ -23,6 +23,7 @@
     </section>
 
     {{-- main --}}
+    {{-- Corpo centrale --}}
     <main>
          @yield('content')
     </main>
@@ -35,7 +36,7 @@
     {{-- Footer --}}
     <footer>
 
-        {{-- Link --}}
+        {{-- footer Link --}}
         <div class="footerTop">
             @include('partials.footer')
         </div>

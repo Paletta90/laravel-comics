@@ -15,6 +15,7 @@
   justify-content: flex-end;
 }
 .bluLine div p {
+  font-size: 0.7rem;
   text-transform: uppercase;
   color: white;
   margin-right: 15px;
@@ -191,4 +192,38 @@
 
 .footerBottom {
   background-color: #303030;
+}
+
+main {
+  background-color: black;
+}
+main #comics {
+  width: 70%;
+  margin: 0 auto;
+}
+main #comics .contenitore {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+main #comics .contenitore .movie {
+  width: calc(16.6666666667% - 10px);
+  margin: 20px 5px;
+}
+main #comics .contenitore .movie .bg-movie {
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 1;
+  margin: 10px 0;
+}
+main #comics .contenitore .movie p {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+main #comics .button {
+  padding: 10px 50px;
+  background-color: #0282f9;
+  color: white;
+  text-transform: uppercase;
 }

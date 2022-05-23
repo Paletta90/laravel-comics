@@ -1,0 +1,42 @@
+main {
+    background-color: black;
+
+    #comics {
+        width: 70%;
+        margin: 0 auto;
+
+        .contenitore {
+            padding: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            .movie {
+                width: calc((100% / 6) - 10px);
+                margin: 20px 5px;
+
+                .bg-movie {
+                    background-size: cover;
+                    width: 100%;
+                    aspect-ratio: 1;
+                    margin: 10px 0;
+                }
+
+                p {
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: $f-small;
+                }
+
+            }
+
+        }
+
+        .button {
+            padding: 10px 50px;
+            background-color: $blue;
+            color: white;
+            text-transform: uppercase;
+        }
+
+    }
+}

@@ -14,63 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $navBar = [
-        'characters',
-        'comics',
-        'movies',
-        'tv',
-        'games',
-        'collectibles',
-        'videos',
-        'fans',
-        'news',
-        'shop'
-    ];
-    $arrayDCComics = [
-        'Characters',
-        'Comics',
-        'Movies',
-        'TV',
-        'Games',
-        'Videos',
-        'News'
-    ];
-    $arrayShop = [
-        'Shop DC',
-        'Shop DC Collectibles'
-    ];
-    $arrayDC = [
-        'Terms Of Use',
-        'Privacy Police (New)',
-        'Ad Choises',
-        'Advertising',
-        'Jobs',
-        'Subscriptions',
-        'Talent Workshops',
-        'CPSC Certificates',
-        'Ratings',
-        'Shop Help',
-        'Contact Us'
-    ];
-    $arraySites = [
-        'DC',
-        'MAD Magazine',
-        'DC Kids',
-        'DC Universe',
-        'DC Power Visa'
-    ];
-    $data = [
-        'navBar' => $navBar,
-        'arrayDCComics' => $arrayDCComics,
-        'arrayShop' => $arrayShop,
-        'arrayDC' => $arrayDC,
-        'arraySites' => $arraySites,
+    $arrayConfig = config('data');
 
+    $data = [
+        'navBar' => $arrayConfig['navBar'],
+        'arrayDCComics' => $arrayConfig['arrayDCComics'],
+        'arrayShop' => $arrayConfig['arrayShop'],
+        'arrayDC' => $arrayConfig['arrayDC'],
+        'arraySites' => $arrayConfig['arraySites']
     ];
     return view('home', $data);
 });
 
 Route::get('/comics', function(){
+
+    $arrayConfig = config('data');
+
     $comics =  [
         [
             "title" => "Action Comics #1000: The Deluxe Edition",
@@ -284,5 +243,15 @@ Route::get('/comics', function(){
             ],
         ],
     ];
-});
+
+    $data = [
+        'fumetti' => $comics,
+        'navBar' => $arrayConfig['navBar'],
+        'arrayDCComics' => $arrayConfig['arrayDCComics'],
+        'arrayShop' => $arrayConfig['arrayShop'],
+        'arrayDC' => $arrayConfig['arrayDC'],
+        'arraySites' => $arrayConfig['arraySites'],
+    ];
+    return view('comics', $data);
+}) -> name('comics');
 
