@@ -4,7 +4,7 @@
 
         <div>
 
-            <p>dc power visa</p>
+            <p>dc power&#8480; visa&#174;</p>
             <p>additional dc sites</p>
 
         </div>
@@ -25,6 +25,7 @@
 
                 @foreach ($navBar as $item)
                 <li>
+                    {{-- class=" {{ Request::route() -> getName() == 'home' ? 'active' : ''}} "  --}}
                     <a href="{{ route( 'comics' ) }}">
                         <div class="p-yb-30">{{$item}}</div>
                         <div class="bar"></div>

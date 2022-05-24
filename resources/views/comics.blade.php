@@ -7,11 +7,17 @@
     <div><span class="button">current series</span></div>
 
     <div class="contenitore">
-        @foreach ($fumetti as $item)
+        @foreach ($fumetti as $key => $item)
 
         <div class="movie">
+
+           <a href="{{ route( 'comic', ['id' => $key] ) }}">
+
             <div class="bg-movie" style="background-image: url('{{$item['thumb']}}')"></div>
-            <p>{{$item['series']}}</p>
+            <p>{{ $item['series'] }}</p>
+            
+           </a>
+
         </div>
 
         @endforeach

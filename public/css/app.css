@@ -138,31 +138,47 @@ ul {
   margin: 0 auto;
   display: flex;
 }
-#footerTop div {
+#footerTop .block-sin {
+  padding-bottom: 10px;
+}
+#footerTop .block-sin .listLinks {
+  display: flex;
+}
+#footerTop .block-sin .listLinks div {
   margin-right: 50px;
 }
-#footerTop div ul {
+#footerTop .block-sin .listLinks div ul {
   margin: 20px 0;
   text-align: left;
 }
-#footerTop div ul h3 {
+#footerTop .block-sin .listLinks div ul h3 {
   color: white;
   margin-bottom: 15px;
 }
-#footerTop div ul li {
+#footerTop .block-sin .listLinks div ul li {
   display: flex;
   flex-direction: column;
   justify-content: initial;
   align-items: initial;
-  color: grey;
   text-align: left;
 }
-#footerTop div ul li a {
+#footerTop .block-sin .listLinks div ul li a {
   font-size: 0.7rem;
-  color: white;
+  color: grey;
   margin-bottom: 5px;
 }
-#footerTop div ul li a:hover {
+#footerTop .block-sin .listLinks div ul li a:hover {
+  text-decoration: underline;
+}
+#footerTop .block-sin p {
+  font-size: 0.7rem;
+  color: grey;
+}
+#footerTop .block-sin p span {
+  color: #0282f9;
+  cursor: pointer;
+}
+#footerTop .block-sin p span:hover {
   text-decoration: underline;
 }
 #footerTop .bg-logo {
