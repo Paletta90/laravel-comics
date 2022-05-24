@@ -20,7 +20,6 @@
 
     {{-- main --}}
     {{-- Corpo centrale --}}
-    {{-- class=" {{ Route::route() -> getName() == 'comics' ? 'bg-black' : '' }} " --}}
     <main>
 
         {{-- Jumbotron --}}
@@ -29,7 +28,7 @@
         </section>
 
         {{-- Sezione che viene modificata in base alla route --}}
-        <section class=" {{ Route::route() -> getName() == 'comics' ? 'bg-black' : '' }} ">
+        <section class=" {{ Request::route() -> getName() == 'comics' ? 'bg-black' : '' }} ">
             @yield('content')
         </section>
 

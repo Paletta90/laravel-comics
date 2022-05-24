@@ -1,25 +1,76 @@
-#comicTop{
-    @include center-x(60%);
+#comic {
+    .img {
+        width: 20%;
+        height: 250px;
+        margin-bottom: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-    .button{
-        background-color: $green;
-        @include flex(row, space-between, center);
+    #comicTop {
+        @include center-x(60%);
+        padding: 20px 0;
+
+        .button {
+            background-color: $green;
+            @include flex(row, space-between, center);
+
+        }
+
+        .price {
+            width: 70%;
+            height: 100%;
+            @include flex(row, space-between, center);
+        }
+
+        .bar-img {
+            display: flex;
+        }
 
     }
-    .price{
-        width: 70%;
-        height: 100%;
-        @include flex(row, space-between, center);
+
+    #comicBottom {
+        background-color: $wheat;
+        padding: 20px 0;
+
+        .top {
+            @include center-x(60%);
+            @include flex(row, space-between, initial);
+
+            .talent {
+                width: 60%;
+                margin-right: 50px
+            }
+
+            .specs {
+                width: calc(40% - 50px);
+            }
+
+        }
+
+        .flex {
+            border-bottom: 1px solid grey;
+            margin: 10px 0;
+            @include flex(row, space-between, initial);
+
+            div {
+                margin: 10px 0;
+
+                span {
+                    color: $blue;
+                }
+            }
+        }
     }
-    .bar-img{
+
+    #linkBottom {
+        background-color: $wheat;
         display: flex;
-    }
-    // .f-grey{
-    //     width: 100%;
-    //     @include flex(row, space-between, initial);
-    // }
 
-}
-#comicBottom{
-    background-color: $wheat;
+        .border {
+            border: 1px solid grey;
+            display: flex;
+        }
+    }
+
 }
