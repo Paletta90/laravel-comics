@@ -12,6 +12,33 @@ ul {
   list-style-type: none;
 }
 
+.jumbotron {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../../../images/jumbotron.jpg");
+  background-size: cover;
+  margin-bottom: -10px;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.barra {
+  width: 100%;
+  height: 10vh;
+  background-color: #0282f9;
+}
+
+.button {
+  padding: 10px 50px;
+  color: white;
+}
+
+.f-grey {
+  color: grey;
+}
+
 .bluLine {
   background-color: #0282f9;
   padding: 10px 0px;
@@ -91,14 +118,6 @@ ul {
 
 .p-yb-30 {
   padding-bottom: 30px;
-}
-
-.jumbotron {
-  width: 100%;
-  height: 50vh;
-  background-image: url("../../../images/jumbotron.jpg");
-  background-size: cover;
-  margin-bottom: -10px;
 }
 
 #sectionLink {
@@ -231,9 +250,6 @@ ul {
   background-color: #303030;
 }
 
-main {
-  background-color: black;
-}
 main #comics {
   width: 70%;
   margin: 0 auto;
@@ -259,9 +275,34 @@ main #comics .contenitore .movie p {
   font-size: 0.7rem;
 }
 main #comics .button {
-  padding: 10px 50px;
   background-color: #0282f9;
-  color: white;
-  font-weight: bolder;
   text-transform: uppercase;
+  font-weight: bolder;
+}
+
+#comicTop {
+  width: 60%;
+  margin: 0 auto;
+}
+#comicTop .button {
+  background-color: #55ba59;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#comicTop .price {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#comicTop .bar-img {
+  display: flex;
+}
+
+#comicBottom {
+  background-color: #f6f6f6;
 }

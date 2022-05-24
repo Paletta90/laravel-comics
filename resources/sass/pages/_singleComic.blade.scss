@@ -1,0 +1,25 @@
+#comicTop{
+    @include center-x(60%);
+
+    .button{
+        background-color: $green;
+        @include flex(row, space-between, center);
+
+    }
+    .price{
+        width: 70%;
+        height: 100%;
+        @include flex(row, space-between, center);
+    }
+    .bar-img{
+        display: flex;
+    }
+    // .f-grey{
+    //     width: 100%;
+    //     @include flex(row, space-between, initial);
+    // }
+
+}
+#comicBottom{
+    background-color: $wheat;
+}

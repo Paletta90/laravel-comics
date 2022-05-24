@@ -4,12 +4,12 @@
 @import './sass-utils/reset';
 // Mixin
 @import './sass-utils/variabili';
+// Helpers
+@import './sass-utils/helpers';
 
 // Layout
 // Header
 @import './layout/header';
-// Jumbotron
-@import './layout/jumbotron';
 // Section Link
 @import './layout/link';
 // Footer
@@ -18,3 +18,6 @@
 // Pages
 //Comics
 @import './pages/comics';
+// Single comic
+@import './pages/singleComic.blade';
+
