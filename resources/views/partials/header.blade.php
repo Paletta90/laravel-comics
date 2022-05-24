@@ -15,7 +15,7 @@
 
         {{-- Logo --}}
         <div>
-            <a href="#"><img src="../images/dc-logo.png" alt="" width="80px"></a>
+            <a href="{{ route('home') }}"><img src="../images/dc-logo.png" alt="" width="80px"></a>
         </div>
 
         {{-- Menu --}}

@@ -25,4 +25,6 @@
 
 </div>
 
+@include('partials.link')
+
 @endsection

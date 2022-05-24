@@ -18,21 +18,17 @@
     {{-- header --}}
     @include('partials.header')
 
-    {{-- Jumbotron --}}
-    <section>
-        @include('partials.jumbotron')
-    </section>
-
     {{-- main --}}
     {{-- Corpo centrale --}}
     <main>
-         @yield('content')
-    </main>
+        {{-- Jumbotron --}}
+        <section>
+            @include('partials.jumbotron')
+        </section>
 
-    {{-- section Link --}}
-    <section>
-        @include('partials.link')
-    </section>
+        @yield('content')
+
+    </main>
 
     {{-- Footer --}}
     <footer>

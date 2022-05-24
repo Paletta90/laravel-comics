@@ -262,5 +262,6 @@ main #comics .button {
   padding: 10px 50px;
   background-color: #0282f9;
   color: white;
+  font-weight: bolder;
   text-transform: uppercase;
 }

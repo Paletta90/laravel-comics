@@ -26,7 +26,7 @@ Route::get('/', function () {
         'arraySites' => $array_dati['arraySites']
     ];
     return view('home', $data);
-});
+}) -> name('home');
 
 // Rotta pagina dei fumetti
 Route::get('/comics', function(){
