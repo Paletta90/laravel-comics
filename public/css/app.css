@@ -284,9 +284,26 @@ main #comics .button {
 #comic .img {
   width: 20%;
   height: 250px;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
   margin-bottom: 50px;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+#comic .img div {
+  padding: 2px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  background-color: #0282f9;
+  bottom: 0;
+}
+#comic .img span {
+  position: absolute;
+  padding: 2px;
+  background-color: #0282f9;
 }
 #comic #comicTop {
   width: 60%;

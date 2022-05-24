@@ -8,10 +8,17 @@
 <div class="barra"></div>
 
 <div id="comic">
+
     <div id="comicTop">
 
         {{-- Immagine fumetto --}}
         <div class="img" style="background-image: url('{{$fumetto['thumb']}}')">
+
+            {{-- View gallery --}}
+            <div>View gallery</div>
+
+            {{-- Coming book --}}
+            <span>Comic book</span>
 
         </div>
         {{-- Dati del singolo fumetto --}}
