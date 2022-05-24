@@ -26,7 +26,7 @@
                 @foreach ($navBar as $item)
                 <li>
                     {{-- class=" {{ Request::route() -> getName() == 'home' ? 'active' : ''}} "  --}}
-                    <a href="{{ route( 'comics') }}">
+                    <a href="{{ url('/{{$item}}') }}">
                         <div class="p-yb-30">{{$item}}</div>
                         <div class="bar"></div>
                     </a>
