@@ -53,6 +53,11 @@
     input{
         border: none;
         border-bottom: 2px solid $blue;
+
+        &::placeholder{
+            color: black;
+            text-align: right;
+        }
     }
 }
 

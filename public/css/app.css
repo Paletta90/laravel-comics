@@ -71,6 +71,18 @@ ul {
   border: none;
   border-bottom: 2px solid #0282f9;
 }
+.header input::-moz-placeholder {
+  color: black;
+  text-align: right;
+}
+.header input:-ms-input-placeholder {
+  color: black;
+  text-align: right;
+}
+.header input::placeholder {
+  color: black;
+  text-align: right;
+}
 
 .bar {
   width: 100%;
